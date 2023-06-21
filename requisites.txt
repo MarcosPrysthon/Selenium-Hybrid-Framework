@@ -1,0 +1,30 @@
+SELENIUM HYBRID FRAMEWORK
+
+Step 1: Create new project and install required packages
+    - Selenium
+    - Pytest: Python unittest framework
+    - Pytest-html: generate pytest HTML reports
+    - Pytest-xdist: run parallel tests
+    - Openpyxl: MS Excel support
+    - Allure-pytest: generate allure reports
+
+Step 2: Create folder structure
+    
+    Project
+        pageObjects (Package)
+        testCases (packages)
+        utilities (package)
+        testData (folder)
+        config (folder)
+        logs (folder)
+        screenshots (folder)
+        reports (folder)
+        run.bat
+
+Step 3: Automate Login test case
+    3.1: Create LoginPage Object Class under 'pageObjects'
+    3.2: Create LoginTest under 'testCases'
+    3.3: Create conftest.py under 'testCases'
+
+Step 4: Capture screenshot on failures
+    Update LoginTest with screenshot under 'testCases'
