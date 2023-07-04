@@ -28,3 +28,14 @@ Step 3: Automate Login test case
 
 Step 4: Capture screenshot on failures
     Update LoginTest with screenshot under 'testCases'
+
+Step 5: Read common values from init file
+    5.1: Add 'config.ini' file in 'config' folder
+    5.2: Create 'readProperties.py' utility file under 'uitilities' package to read common data
+    5.3: Replace hard coded values in test cases
+
+Step 6: Adding logs to the test cases
+    6.1: Add customLogger.py under 'utilities' package
+    6.2: Add los to Login test case
+
+Step 7: 
