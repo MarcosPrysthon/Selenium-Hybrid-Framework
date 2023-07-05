@@ -38,4 +38,16 @@ Step 6: Adding logs to the test cases
     6.1: Add customLogger.py under 'utilities' package
     6.2: Add los to Login test case
 
-Step 7: 
+Step 7: Run tests on desired browser and in parallel
+    7.1: Update conftest.py with required Fixtures which accept command line arguments
+    7.2: Pass browser name as argument in command line
+
+    RUN TEST ON DESIRED BROWSER:
+        pytest -s -v <test_path> --browser chrome
+        pytest -s -v <test_path> --browser firefox
+
+    RUN TESTS IN PARALLEL
+        pytest -s -v n=3 <test_path> --browser chrome
+        pytest -s -v n=3 <test_path> --browser firefox
+
+Step 8: 
