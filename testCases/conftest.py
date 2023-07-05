@@ -19,3 +19,11 @@ def pytest_addoption(parser):    # This will get the value from CLI
 @pytest.fixture()
 def browser(request):            # This will return the browser to the setup method   
     return request.config.getoption('--browser')
+
+# HTML Report
+def pytest_configure(config):    # Hook for adding env info to HTML report
+    config._metadata = {
+        'Project name': 'nop Commerce',
+        'Module name': 'Costumers',
+        'Tester': 'Marcos'
+    }

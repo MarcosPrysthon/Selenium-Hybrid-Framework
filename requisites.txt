@@ -50,4 +50,13 @@ Step 7: Run tests on desired browser and in parallel
         pytest -s -v n=3 <test_path> --browser chrome
         pytest -s -v n=3 <test_path> --browser firefox
 
-Step 8: 
+Step 8: Generate pytest HTML report
+    8.1: Update conftest.py with pytest hooks
+    8.2: Generate HTML report running: 
+        pytest -s -v --html=reports\report.html <test_path> --browser chrome
+
+Step 9: Automating Data Driven test case
+    9.1: Prepare test data in Excel sheet, place the excel file inside testData folder
+    9.2: Create 'ExcelUtils.py' utility class under utilities
+    9.3: Create 'login_data_driven_test' under 'testCases'
+    9.4: Run test case
