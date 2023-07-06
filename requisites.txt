@@ -60,3 +60,8 @@ Step 9: Automating Data Driven test case
     9.2: Create 'ExcelUtils.py' utility class under utilities
     9.3: Create 'login_data_driven_test' under 'testCases'
     9.4: Run test case
+
+Step 10: New test cases
+    10.1: Add new costumer
+    10.2: Search costumer by Email
+    10.3: Search costumer by name
