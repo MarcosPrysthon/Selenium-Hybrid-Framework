@@ -1,7 +1,7 @@
 import pytest
 from selenium import webdriver
 from pageObjects.login_page import LoginPage
-from pageObjects.add_costumer_page import AddCostumer
+from pageObjects.add_costumer_page import AddCustomer
 from utilities.read_propeerties import ReadConfig
 from utilities.custom_logger import LogGen
 from utilities.email_generator import random_generator
@@ -19,7 +19,7 @@ class Test_003_AddCostumer:
         self.driver.maximize_window()
 
         self.lp = LoginPage(self.driver)
-        self.add_cust = AddCostumer(self.driver)
+        self.add_cust = AddCustomer(self.driver)
 
         self.lp.set_username(self.username)
         self.lp.set_password(self.password)

@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.support.select import Select
 import time
 
-class AddCostumer:
+class AddCustomer:
     sidebar_costumer_xpath = '/html/body/div[3]/aside/div/div[4]/div/div/nav/ul/li[4]/a'
     sidebar_costumer_option_xpath = '/html/body/div[3]/aside/div/div[4]/div/div/nav/ul/li[4]/ul/li[1]/a'
     button_add_new_xpath = '/html/body/div[3]/div[1]/form[1]/div/div/a'
